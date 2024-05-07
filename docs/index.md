@@ -1,6 +1,6 @@
 # AutoThemeGenerator  
 ## Basic Usage  
-AutoThemeGenerator is a package that allows you to perform qualitative analysis using OpenAI's GPT models. 
+AutoThemeGenerator is a package that allows you to perform qualitative analysis using OpenAI's GPT models. The PyPi package could be referenced at [pypi.org/project/AutoThemeGenerator/](https://pypi.org/project/AutoThemeGenerator/). 
 
 ### Objective 
 
@@ -108,11 +108,6 @@ analyze_and_synthesize_transcripts(
     research_questions = research_questions, script = survey_script,
     api_key = api_key, save_results_path = save_results_path)
 
-
-# optional (load your saved themes)
-overall_synthesized_themes = load_results_from_json(
-    os.path.join(save_results_path, "themes_overall.json"))
-
 # display your study-level themes
 print(overall_synthesized_themes)
 ```
@@ -132,5 +127,7 @@ Chunk level themes are then synthesized at a participant-level.
 ##### 4. Synthesizing themes to a study-level
 Participant-level themes are then synthesized at a study-level. For each study, the package returns a topic sentence of the theme, an explaination of the theme, and a supporting relevant quote from the transcript. 
 
+## Citation  
+Y Yang, C Alba, W Xi, M Li, C Wang, A Jami, R An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers" Working paper.
 
 

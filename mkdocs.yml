@@ -9,3 +9,10 @@ theme:
   hljs_languages:
     - yaml
     - rust
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
