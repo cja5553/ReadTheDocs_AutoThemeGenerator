@@ -1,7 +1,8 @@
-site_name: GPT4QualitativeAnalysis
+site_name: AutoThemeGenerator
 nav:
   - Home: index.md
-  - Documentation: documenation.md
+  - Documentation: documention.md
+  - Examples: examples.md
 theme:
   name: readthedocs
   highlightjs: true

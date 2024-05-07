@@ -1,25 +1,57 @@
-# GPT4QualititativeAnalysis Documentation
+# AutoThemeGenerator  
+## Basic Usage  
+AutoThemeGenerator is a package that allows you to perform qualitative analysis using OpenAI's GPT models. 
 
-GPT4QualitativeAnalysis is a package that allows you to perform qualitative analysis using OpenAI's GPT models in an efficient and quick manner. 
+### Objective 
 
+### User input  
 
-* This package could read transcripts of any content type (ie PDF, word docx, txt files)! All you have to do is specify the folder in which your transcripts are stored in your local computer. 
-* This package could read extensive amounts of transcripts (limited by your OpenAI API budget limit) and provide succint and reliable themes!
-* Each theme comes in the form of a topic sentence, a detailed explaination and a relevant quote from the transcript, just like any other high level qualitative study!
+Users are only required to specify the folder location where their interview transcripts are stored. Accepted formats of transcripts include `PDF`, `.docx`, and `.txt` (prefered).AutoThemeGenerator` assumes that each document is a transcript of one interviewed participant. Files that are not formatted as such may lead to subpar results (refer to [How does it work?](#how-does-it-work) to understand why) 
+
+### Output  
+
+The package outputs a **list of relevant themes** synthesized across all interview transcripts. Themes are presented in the form of a:  
+1. topic sentence,  
+2. an explanation,  
+3. a relevant quote  
+The outputs are similar to what you would expect to see in a proper qualitative analysis study. An example of an expected output is shown below:   
+```python
+>>> print(overall_synthesized_themes)
+
+# note: output truncated for display purposes
+["**Theme 1: Understanding and Awareness of Physical Activity**
+- Topic Sentence: Participants exhibited a range of understandings ... ... 
+- Explanation: Physical activity was generally understood ... ... 
+- Quote: 'Physical activity is anything that ...'
+**Theme 2: Personal and Environmental Barriers to Physical Activity** 
+- Topic Sentence: Participants identified multiple personal and situational obstacles ... ...
+- Explnanation: These barriers stem from personal issues like inconvenience ... ...
+- Quote: 'I think that a lot of people don’t want to put in the effort'... ... 
+... ...
+... ...
+... ..."]
+```
+
+The package is also structured to analyze and view themes for each individual transcript. For more details refer to [examples](examples.md) or [documention](documention.md)
 
 ## Requirements
 ### Required packages
-The following packages are required to use this package:  
-- `openai`   
-- `docx`  
-- `tqdm`  
-- `nltk`  
-- `python-docx`
-- `textract`
+To use `AutoThemeGenerator`, you are required to have the following packages installed:  
+- `openai`  
+- `docx`    
+- `tqdm`    
+- `nltk`    
+- `nltk.tokenize`    
+- `python-docx`  
+- `textract`  
+- `zipfile`  
+- `shutil`  
+- `requests`  
+- `json`  
 
-If you do not have this packages installed in python, you can do the following 
+If you do not have this packages installed in python, you can do the following:
 ```bash
-pip install openai docx tqdm nltk python-docx textract
+pip install openai docx tqdm nltk nltk.tokenize python-docx textract zipfile shutil requests json
 ```
 ### OpenAI API key
 You also need an OpenAI key to be able to use this package. If you do not have one, you can apply for an OpenAI API key at [platform.openai.com/api-keys](https://platform.openai.com/api-keys). 
@@ -29,14 +61,14 @@ You also need an OpenAI key to be able to use this package. If you do not have o
 To install in python, simply do the following: 
 
 ```bash
-pip install GPT4QualititativeAnalysis
+pip install AutoThemeGenerator
 ```
 
 ## Quick Start
-Here we provide a quick example on how you can execute GPT4QualitativeAnalysis to conveniently perform qualitative analysis from your transcript. For details towards each of the package's functions and parameters, refer to the [documentation](documentation.md). 
+Here we provide a quick example on how you can execute GPT4QualitativeAnalysis to conveniently perform qualitative analysis from your transcript. For details towards each of the package's functions and parameters, refer to the [documention](documention.md). 
 
 ```python
-from GPT4QualititativeAnalysis import *
+from AutoThemeGenerator import *
 
 # specify the context of your study
 context = (
@@ -55,8 +87,8 @@ research_questions = (
 survey_script = (
     "Knowledge\n "
     "What do you know about physical activity? How might you define physical activity? "
-    "... ..."
-    "... ..." # truncated to save space
+    "... ..." # note: truncated to save space
+    "... ..." 
     )
 
 
@@ -81,9 +113,13 @@ analyze_and_synthesize_transcripts(
 overall_synthesized_themes = load_results_from_json(
     os.path.join(save_results_path, "themes_overall.json"))
 
-# view the relevant themes and 
+# display your study-level themes
 print(overall_synthesized_themes)
 ```
+
+You can now view the themes in the form of a topic sentence, a detailed explaination and a relevant quote
+
+
 
 ## How does it work?
 ![alt text](Figure 1.jpg)
