@@ -3,10 +3,10 @@ AutoThemeGenerator is a package that allows you to perform thematic analysis in 
 
 <p align="center">
   <a href="https://cja5553.github.io/ReadTheDocs_AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/Documentation-v0.1.0-orange" alt="Documentation">
+    <img src="https://img.shields.io/badge/Documentation-v0.1.1-orange" alt="Documentation">
   </a>
   <a href="https://pypi.org/project/AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/pypi_package-v0.1.0-brightgreen" alt="pypi package">
+    <img src="https://img.shields.io/badge/pypi_package-v0.1.1-brightgreen" alt="pypi package">
   </a>
   <a href="https://github.com/cja5553/AutoThemeGenerator">
     <img src="https://img.shields.io/badge/github_source_code-source_code?logo=github&color=green" alt="GitHub Source Code">
@@ -50,21 +50,21 @@ The package is also structured to analyze and view themes for each individual tr
 ## Requirements
 ### Required packages
 To use `AutoThemeGenerator`, you are required to have the following packages installed:  
-- `openai==1.12.0`  
+- `openai`  
 - `docx`    
 - `tqdm`    
 - `nltk`    
-- `nltk.tokenize`    
+- `nltk.tokenize` (submodule of `nltk`)   
 - `python-docx`  
 - `textract`  
-- `zipfile`  
-- `shutil`  
 - `requests`  
-- `json`  
+- `zipfile` (Python standard library)   
+- `shutil`  (Python standard library)  
+- `json`  (Python standard library)  
 
 If you do not have this packages installed in python, you can do the following:
 ```bash
-pip install openai==1.12.0 docx tqdm nltk nltk.tokenize python-docx textract zipfile shutil requests json
+pip install openai==1.12.0 python-docx docx tqdm nltk textract requests
 ```
 ### OpenAI API key
 You also need an OpenAI key to be able to use this package. If you do not have one, you can apply for an OpenAI API key at [platform.openai.com/api-keys](https://platform.openai.com/api-keys). 
