@@ -1,4 +1,5 @@
 # AutoThemeGenerator  
+AutoThemeGenerator is a package that allows you to perform thematic analysis in qualitative studies using OpenAI's GPT models. 
 
 <p align="center">
   <a href="https://cja5553.github.io/ReadTheDocs_AutoThemeGenerator/">
@@ -15,16 +16,10 @@
   </a>
 </p>
 
-## Basic Usage  
-AutoThemeGenerator is a package that allows you to perform qualitative analysis using OpenAI's GPT models. 
-
-
-
-### Objective 
 
 ### User input  
 
-Users are only required to specify the folder location where their interview transcripts are stored. Accepted formats of transcripts include `PDF`, `.docx`, and `.txt` (prefered).AutoThemeGenerator` assumes that each document is a transcript of one interviewed participant. Files that are not formatted as such may lead to subpar results (refer to [How does it work?](#how-does-it-work) to understand why) 
+Users are only required to specify the folder location where their interview transcripts are stored. Accepted formats of transcripts include `PDF`, `.docx`, and `.txt` (prefered). AutoThemeGenerator` assumes that each document is a transcript of one interviewed participant. Files that are not formatted as such may lead to subpar results (refer to [How does it work?](#how-does-it-work) to understand why) 
 
 ### Output  
 
@@ -50,12 +45,12 @@ The outputs are similar to what you would expect to see in a proper qualitative 
 ... ..."]
 ```
 
-The package is also structured to analyze and view themes for each individual transcript. For more details refer to [examples](examples.md) or [documention](documention.md)
+The package is also structured to analyze and view themes for each individual transcript. For more details refer to [documention](documention.md). 
 
 ## Requirements
 ### Required packages
 To use `AutoThemeGenerator`, you are required to have the following packages installed:  
-- `openai`  
+- `openai==1.12.0`  
 - `docx`    
 - `tqdm`    
 - `nltk`    
@@ -69,7 +64,7 @@ To use `AutoThemeGenerator`, you are required to have the following packages ins
 
 If you do not have this packages installed in python, you can do the following:
 ```bash
-pip install openai docx tqdm nltk nltk.tokenize python-docx textract zipfile shutil requests json
+pip install openai==1.12.0 docx tqdm nltk nltk.tokenize python-docx textract zipfile shutil requests json
 ```
 ### OpenAI API key
 You also need an OpenAI key to be able to use this package. If you do not have one, you can apply for an OpenAI API key at [platform.openai.com/api-keys](https://platform.openai.com/api-keys). 
