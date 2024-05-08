@@ -144,3 +144,5 @@ Participant-level themes are then synthesized at a study-level. For each study, 
 Y Yang, C Alba, W Xi, M Li, C Wang, A Jami, R An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers" Working paper.
 
 
+## Questions?
+Contact me at [alba@wusl.edu](mailto:alba@wusl.edu)

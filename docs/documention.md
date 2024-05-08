@@ -1,4 +1,8 @@
-## `analyze_and_synthesize_transcripts`
+#
+
+## `analyze_and_synthesize_transcripts`  
+
+
 
 !!! note ""
 
@@ -10,7 +14,7 @@
 Function that analyzes transcripts, chunks them into manageable sizes, and synthesizes them into individual themes before syntheszing them into overarching study themes using an OpenAI GPT model. For more details, refer to [How does it work?](index.md#how-does-it-work) 
 
 
-**Parameters:**:  
+### Parameters  
 
  - `directory_path` (*str*): The folder path in which the transcripts are located.  Folder should contain either `.txt`,`.docx`, or `.pdf` files. 
  - `context` (*str*): Context of the overall study
@@ -27,12 +31,12 @@ Function that analyzes transcripts, chunks them into manageable sizes, and synth
 - `max_tokens_combine_all_themes` (*int, optional*): Maximum token length for combining themes from all participants. Defaults to 4000.
 - `max_tokens_gen_all_themes` (*int, optional*): Maximum tokens for generating themes from all participants (each individual has a single chunck of themes). Defaults to 2000.
 
-**Returns**  
+### Returns
 
-- `initial_themes`, `individual_synthesized_themes` & `overall_synthesized_themes` each as a list of lists: A list where each sublist contains a synthesized chunk of overall study themes.  
+- Your **chunk-level themes**, **participant-level synthesized themes** & **study-level synthesized themes** each as a list of lists: A list where each sublist contains a synthesized chunk of overall study themes. For more details, refer to [How does it work?](index.md#how-does-it-work)
 
 
-**Example**
+### Example
 
 ```python
 from AutoThemeGenerator import analyze_and_synthesize_transcripts
@@ -79,18 +83,18 @@ print(overall_synthesized_themes)
 !!! note ""
 
     
-    AutoThemeGenerator.**download_example**()  
+    AutoThemeGenerator.**download_example***(\*)*
 
 Function to download example transcripts from a url. Used primarily for ease of demonstration in our [demonstrated examples](examples.md). 
 
 
-**Parameters:**:  
+### Parameters
 
  - `folder_name` (*str, optional*): Name of folder where the example transcripts will be contained in exisiting directory. Defaults to `example_transcripts`. 
  - `url` (*str, optional*): download url of the transcripts, should end in .zip format. Defaults to downloading an .zip transcripts from [Henderson et al's (2020)](https://jeehp.org/journal/view.php?doi=10.3352/jeehp.2020.17.22) study.  
 
 
-**Example**
+### Example
 
 ```python
 >>> from AutoThemeGenerator import download_example
