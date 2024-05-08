@@ -28,6 +28,7 @@ Function that analyzes transcripts, chunks them into manageable sizes, and synth
 - `max_tokens_gen_all_themes` (*int, optional*): Maximum tokens for generating themes from all participants (each individual has a single chunck of themes). Defaults to 2000.
 
 **Returns**  
+
 - `initial_themes`, `individual_synthesized_themes` & `overall_synthesized_themes` each as a list of lists: A list where each sublist contains a synthesized chunk of overall study themes.  
 
 

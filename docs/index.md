@@ -1,6 +1,24 @@
 # AutoThemeGenerator  
+
+<p align="center">
+  <a href="https://cja5553.github.io/ReadTheDocs_AutoThemeGenerator/">
+    <img src="https://img.shields.io/badge/Documentation-v0.0.7-orange" alt="Documentation">
+  </a>
+  <a href="https://pypi.org/project/AutoThemeGenerator/">
+    <img src="https://img.shields.io/badge/pypi_package-v0.0.7-brightgreen" alt="pypi package">
+  </a>
+  <a href="https://github.com/cja5553/AutoThemeGenerator">
+    <img src="https://img.shields.io/badge/github_source_code-source_code?logo=github&color=green" alt="GitHub Source Code">
+  </a>
+  <a href="https://colab.research.google.com/drive/1BoAI-QNL-yL8j8hUJ3K8cJkbyp4spoQ3">
+    <img src="https://img.shields.io/badge/-Colab_Example-grey?logo=google&logoColor=F9AB00" alt="Colab Example">
+  </a>
+</p>
+
 ## Basic Usage  
-AutoThemeGenerator is a package that allows you to perform qualitative analysis using OpenAI's GPT models. The PyPi package could be referenced at [pypi.org/project/AutoThemeGenerator/](https://pypi.org/project/AutoThemeGenerator/). 
+AutoThemeGenerator is a package that allows you to perform qualitative analysis using OpenAI's GPT models. 
+
+
 
 ### Objective 
 
