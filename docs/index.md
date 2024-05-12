@@ -145,4 +145,4 @@ Y Yang, C Alba, W Xi, M Li, C Wang, A Jami, R An. "GPT Models Can Perform Themat
 
 
 ## Questions?
-Contact me at [alba@wusl.edu](mailto:alba@wusl.edu)
+Contact me at [alba@wustl.edu](mailto:alba@wustl.edu)
