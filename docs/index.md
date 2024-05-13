@@ -45,7 +45,7 @@ The outputs are similar to what you would expect to see in a proper qualitative 
 ... ..."]
 ```
 
-The package is also structured to analyze and view themes for each individual transcript. 
+You could also view the themes for each individual transcript as follows: 
 
 ```Python
 >>> from pprint import pprint
