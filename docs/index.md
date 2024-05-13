@@ -52,6 +52,17 @@ The package is also structured to analyze and view themes for each individual tr
 >>> for i in range(len(individual_synthesized_themes)):
 >>>      print(f"\n\nThe themes from interviewee {i+1} is:\n")
 >>>      pprint(individual_synthesized_themes[i])
+The themes from interviewee 1 is:
+["Theme 1:
+- Topic Sentence: ... ...,
+- Explaination: ... ...,
+- Quote: ... ...]
+
+The themes from interviewee 2 is:
+["Theme 1: ... ...
+- Topic Sentence: ... ...,
+- Explaination: ... ...,
+- Quote: ... ...]
 ```
 
 For more details refer to [documention](documention.md). 
