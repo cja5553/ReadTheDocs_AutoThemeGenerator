@@ -83,7 +83,7 @@ To use `AutoThemeGenerator`, you are required to have the following packages ins
 - `shutil`  (Python standard library)  
 - `json`  (Python standard library)  
 
-If you do not have this packages installed in python, you can do the following:
+If you do not have those packages installed in python, you can do the following:
 ```bash
 pip install openai==1.12.0 python-docx docx tqdm nltk textract requests
 ```
