@@ -45,7 +45,16 @@ The outputs are similar to what you would expect to see in a proper qualitative 
 ... ..."]
 ```
 
-The package is also structured to analyze and view themes for each individual transcript. For more details refer to [documention](documention.md). 
+The package is also structured to analyze and view themes for each individual transcript. 
+
+```Python
+>>> from pprint import pprint
+>>> for i in range(len(individual_synthesized_themes)):
+>>>      print(f"\n\nThe themes from interviewee {i+1} is:\n")
+>>>      pprint(individual_synthesized_themes[i])
+```
+
+For more details refer to [documention](documention.md). 
 
 ## Requirements
 ### Required packages
