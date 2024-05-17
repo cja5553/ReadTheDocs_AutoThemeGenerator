@@ -3,10 +3,10 @@ AutoThemeGenerator is a package that allows you to perform thematic analysis in 
 
 <p align="center">
   <a href="https://cja5553.github.io/ReadTheDocs_AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/Documentation-v0.1.2-orange" alt="Documentation">
+    <img src="https://img.shields.io/badge/Documentation-v0.1.4-orange" alt="Documentation">
   </a>
   <a href="https://pypi.org/project/AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/pypi_package-v0.1.2-brightgreen" alt="pypi package">
+    <img src="https://img.shields.io/badge/pypi_package-v0.1.4-brightgreen" alt="pypi package">
   </a>
   <a href="https://github.com/cja5553/AutoThemeGenerator">
     <img src="https://img.shields.io/badge/github_source_code-source_code?logo=github&color=green" alt="GitHub Source Code">
@@ -45,7 +45,28 @@ The outputs are similar to what you would expect to see in a proper qualitative 
 ... ..."]
 ```
 
-The package is also structured to analyze and view themes for each individual transcript. For more details refer to [documention](documention.md). 
+You could also view the themes for each individual transcript as follows: 
+
+```Python
+>>> from pprint import pprint
+>>> for i in range(len(individual_synthesized_themes)):
+>>>      print(f"\n\nThe themes from interviewee {i+1} is:\n")
+>>>      pprint(individual_synthesized_themes[i])
+# note: output truncated for display purposes
+The themes from interviewee 1 is:
+["Theme 1:
+- Topic Sentence: ... ...,
+- Explaination: ... ...,
+- Quote: ... ...]
+
+The themes from interviewee 2 is:
+["Theme 1: ... ...
+- Topic Sentence: ... ...,
+- Explaination: ... ...,
+- Quote: ... ...]
+```
+
+For more details refer to [documention](documention.md). 
 
 ## Requirements
 ### Required packages
@@ -63,7 +84,7 @@ To use `AutoThemeGenerator`, you are required to have the following packages ins
 - `json`  (Python standard library)  
 - `pprint` (Python standard library)
 
-If you do not have this packages installed in python, you can do the following:
+If you do not have those packages installed in python, you can do the following:
 ```bash
 pip install openai==1.12.0 python-docx docx tqdm nltk textract requests
 ```
@@ -146,4 +167,4 @@ Y Yang, C Alba, W Xi, M Li, C Wang, A Jami, R An. "GPT Models Can Perform Themat
 
 
 ## Questions?
-Contact me at [alba@wusl.edu](mailto:alba@wusl.edu)
+Contact me at [alba@wustl.edu](mailto:alba@wustl.edu)
