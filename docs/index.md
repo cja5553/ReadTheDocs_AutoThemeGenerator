@@ -3,10 +3,10 @@ AutoThemeGenerator is a package that allows you to perform thematic analysis in 
 
 <p align="center">
   <a href="https://cja5553.github.io/ReadTheDocs_AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/Documentation-v0.1.4-orange" alt="Documentation">
+    <img src="https://img.shields.io/badge/Documentation-v0.1.5-orange" alt="Documentation">
   </a>
   <a href="https://pypi.org/project/AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/pypi_package-v0.1.4-brightgreen" alt="pypi package">
+    <img src="https://img.shields.io/badge/pypi_package-v0.1.5-brightgreen" alt="pypi package">
   </a>
   <a href="https://github.com/cja5553/AutoThemeGenerator">
     <img src="https://img.shields.io/badge/github_source_code-source_code?logo=github&color=green" alt="GitHub Source Code">
