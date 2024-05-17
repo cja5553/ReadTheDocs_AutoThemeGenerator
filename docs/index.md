@@ -61,6 +61,7 @@ To use `AutoThemeGenerator`, you are required to have the following packages ins
 - `zipfile` (Python standard library)   
 - `shutil`  (Python standard library)  
 - `json`  (Python standard library)  
+- `pprint` (Python standard library)
 
 If you do not have this packages installed in python, you can do the following:
 ```bash
