@@ -107,7 +107,7 @@ Function to download example transcripts from a url. Used primarily for ease of 
     
     AutoThemeGenerator.**load_results_from_json***(\*, file_path)*
 
-Load the themes which were saved as a JSON file.
+Loads the themes which were extracted from the analyzed transcripts that are saved as a JSON file.
 
 ### Parameters
 - `file_path` (str): The path where the JSON file is located.
