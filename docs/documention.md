@@ -115,6 +115,8 @@ Load the themes which were saved as a JSON file.
 ### Returns:
 - list: The loaded analysis results.
 
+
+### Example
 ```python
 from AutoThemeGenerator import load_results_from_json
 # specify the folder where you saved your themes. 
