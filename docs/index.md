@@ -3,16 +3,19 @@ AutoThemeGenerator is a package that allows you to perform thematic analysis in 
 
 <p align="center">
   <a href="https://cja5553.github.io/ReadTheDocs_AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/Documentation-v0.1.5-orange" alt="Documentation">
+    <img src="https://img.shields.io/badge/Documentation-v0.1.6-orange" alt="Documentation">
   </a>
   <a href="https://pypi.org/project/AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/pypi_package-v0.1.5-brightgreen" alt="pypi package">
+    <img src="https://img.shields.io/badge/pypi_package-v0.1.6-brightgreen" alt="pypi package">
   </a>
   <a href="https://github.com/cja5553/AutoThemeGenerator">
     <img src="https://img.shields.io/badge/github_source_code-source_code?logo=github&color=green" alt="GitHub Source Code">
   </a>
   <a href="https://colab.research.google.com/drive/1BoAI-QNL-yL8j8hUJ3K8cJkbyp4spoQ3">
     <img src="https://img.shields.io/badge/-Colab_Example-grey?logo=google&logoColor=F9AB00" alt="Colab Example">
+  </a>
+  <a href="https://www.youtube.com/watch?v=Bq-shYFtoCI">
+    <img src="https://img.shields.io/badge/-Video_demonstration-red?logo=youtube&logoColor=black" alt="Youtube Demo">
   </a>
 </p>
 
@@ -170,7 +173,7 @@ Chunk level themes are then synthesized at a participant-level.
 Participant-level themes are then synthesized at a study-level. For each study, the package returns a topic sentence of the theme, an explaination of the theme, and a supporting relevant quote from the transcript. 
 
 ## Citation  
-Y Yang, C Alba, W Xi, M Li, C Wang, A Jami, R An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers" Working paper.
+Y Yang, C Alba, C Wang, M Li, W Xi, A Jami, R An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers" Working paper.
 
 
 ## Questions?

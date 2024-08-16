@@ -93,10 +93,36 @@ Function to download example transcripts from a url. Used primarily for ease of 
  - `folder_name` (*str, optional*): Name of folder where the example transcripts will be contained in exisiting directory. Defaults to `example_transcripts`. 
  - `url` (*str, optional*): download url of the transcripts, should end in .zip format. Defaults to downloading an .zip transcripts from [Henderson et al's (2020)](https://jeehp.org/journal/view.php?doi=10.3352/jeehp.2020.17.22) study.  
 
-
 ### Example
 
 ```python
 >>> from AutoThemeGenerator import download_example
 >>> download_example()
+```
+
+## `load_results_from_json`
+
+!!! note ""
+
+    
+    AutoThemeGenerator.**load_results_from_json***(\*, file_path)*
+
+Loads the themes which were extracted from the analyzed transcripts that are saved as a JSON file.
+
+### Parameters
+- `file_path` (str): The path where the JSON file is located.
+
+### Returns:
+- list: The loaded analysis results.
+
+
+### Example
+```python
+from AutoThemeGenerator import load_results_from_json
+# specify the folder where you saved your themes. 
+save_results_path = "folder_of_my_saved_results"
+# Load the synthesized results
+overall_synthesized_themes = load_results_from_json(
+    os.path.join(save_results_path, "themes_overall.json"))
+print(overall_synthesized_themes)
 ```
