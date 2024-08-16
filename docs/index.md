@@ -91,6 +91,13 @@ pip install openai==1.12.0 python-docx docx tqdm nltk textract requests
 ### OpenAI API key
 You also need an OpenAI key to be able to use this package. If you do not have one, you can apply for an OpenAI API key at [platform.openai.com/api-keys](https://platform.openai.com/api-keys). 
 
+### `pip` version  
+
+The package could only be installed with version older than `24.1`. Newer versions of `pip` will not work due to compatability issues with `textract`. To downgrade to a version older than `24.1`, please do the following:
+
+```bash
+pip install "pip<24.1"
+```
 
 ## Installation
 To install in python, simply do the following: 
