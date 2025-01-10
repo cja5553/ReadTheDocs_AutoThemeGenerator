@@ -173,7 +173,7 @@ Chunk level themes are then synthesized at a participant-level.
 Participant-level themes are then synthesized at a study-level. For each study, the package returns a topic sentence of the theme, an explaination of the theme, and a supporting relevant quote from the transcript. 
 
 ## Citation  
-Yang, Yuyi, Charles Alba, Chenyu Wang, Xi Wang, Jami Anderson, and Ruopeng An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers." Journal of Social Computing, vol. 5, no. 4, (2024): 293-312. doi: https://doi.org/10.23919/JSC.2024.0024
+Yang, Yuyi, Charles Alba, Chenyu Wang, Xi Wang, Jami Anderson, and Ruopeng An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers." Journal of Social Computing, vol. 5, no. 4, (2024): 293-312. doi: [10.23919/JSC.2024.0024](https://doi.org/10.23919/JSC.2024.0024)
 
 ## Questions?
 Contact me at [alba@wustl.edu](mailto:alba@wustl.edu)
