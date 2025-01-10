@@ -3,10 +3,10 @@ AutoThemeGenerator is a package that allows you to perform thematic analysis in 
 
 <p align="center">
   <a href="https://cja5553.github.io/ReadTheDocs_AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/Documentation-v0.1.8-orange" alt="Documentation">
+    <img src="https://img.shields.io/badge/Documentation-v0.1.9-orange" alt="Documentation">
   </a>
   <a href="https://pypi.org/project/AutoThemeGenerator/">
-    <img src="https://img.shields.io/badge/pypi_package-v0.1.8-brightgreen" alt="pypi package">
+    <img src="https://img.shields.io/badge/pypi_package-v0.1.9-brightgreen" alt="pypi package">
   </a>
   <a href="https://github.com/cja5553/AutoThemeGenerator">
     <img src="https://img.shields.io/badge/github_source_code-source_code?logo=github&color=green" alt="GitHub Source Code">
@@ -173,8 +173,7 @@ Chunk level themes are then synthesized at a participant-level.
 Participant-level themes are then synthesized at a study-level. For each study, the package returns a topic sentence of the theme, an explaination of the theme, and a supporting relevant quote from the transcript. 
 
 ## Citation  
-Y Yang, C Alba, C Wang, M Li, W Xi, A Jami, R An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers" Working paper.
-
+Yang, Yuyi, Charles Alba, Chenyu Wang, Xi Wang, Jami Anderson, and Ruopeng An. "GPT Models Can Perform Thematic Analysis in Public Health Studies, Akin to Qualitative Researchers." Journal of Social Computing, vol. 5, no. 4, (2024): 293-312. doi: https://doi.org/10.23919/JSC.2024.0024
 
 ## Questions?
 Contact me at [alba@wustl.edu](mailto:alba@wustl.edu)
